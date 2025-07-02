@@ -242,7 +242,7 @@ class LMS:
     def from_config(cls,config):
         student=None
         for data in LMS.student_lists:
-            if config['phone'] in data.keys():
+            if config['student']['phone'] in data.keys():
                 raise DuplicateDataError('Student already exist in the LMS,, choose another phone number')
         else:
             stu=Student(
