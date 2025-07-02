@@ -296,6 +296,8 @@ except LMSError as e:
     print(e)
 except StudentError as e:
     print(e)
+except Exception as e:
+    print(e)
 else:
     print(obj.student_lists)
 finally:
